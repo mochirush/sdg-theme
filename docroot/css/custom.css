@@ -1,0 +1,1766 @@
+/* SDG Corporate
+=================================== */
+/* Table of Contents 
+
+  1: Global Corporate Style
+    1.1: Default Fonts, body etc
+    1.2: Page Elements
+    1.3: Naviation
+    1.4: Page Banners
+
+  2: General Page Styling
+    2.1: News/Block Items
+
+  3: Specific Page Styling
+    3.1 - Home Page
+    3.2 - Our Solutions Page
+    3.3 - About Us Page
+    3.4 - Blog Page
+    3.5 - Contact Us Forms
+
+  4: Slide Show
+
+  5: Social Icons
+
+  6: Footer
+
+  7: Media Queries
+    6.1: iPhone
+    6.2: iPad
+
+*/
+
+/*  1 : ----------------------------- Global Corporate Style ------------------------------- */
+/*  1.1 : ------------- Default Fonts, Body, Links, Color Etc ---------------- */
+@font-face
+{
+  font-family:TradeGothicLTStd-Light;
+  src:url(../fonts/TradeGothicLTStd-Light.eot);
+  src:url(../fonts/TradeGothicLTStd-Light.eot?#iefix) format(embedded-opentype), url(../fonts/TradeGothicLTStd-Light.woff) format(woff), url(../fonts/TradeGothicLTStd-Light.ttf) format(truetype), url(../fonts/TradeGothicLTStd-Light.svg#0f50e3a4ad6f4ba6047d6df7e537a8fb) format(svg);
+  font-style:normal;
+  font-weight:200;
+}
+
+body
+{
+  background-color:#f0f0f0;
+  font-family:TradeGothicLTStd-Light,sans-serif;
+  font-size:16px;
+  font-weight:200;
+  line-height:21px;
+  margin:0;
+}
+
+a
+{
+  transition:.5s ease;
+  text-decoration: none;
+}
+
+a:hover
+{
+  text-decoration:none;
+}
+
+*
+{
+  box-sizing:border-box;
+}
+
+li {
+  list-style:none;
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*  1.2 : ------------- Page Elements ---------------- */
+.thin-sdg-blue
+{
+  position:absolute;
+  width:100%;
+  background:url(../images/thin-blue-sdg.png) repeat;
+  background-size:100% 30px;
+  height:30px;
+  z-index:10;
+  padding:6px 0 0 15px;
+  color:#fff;
+  font-weight:700;
+}
+
+h2.tech-head
+{
+  color:#333;
+  width:100%;
+  text-align:center;
+}
+
+iframe
+{
+  border:0;
+}
+
+.container-fluid
+{
+  max-width:1280px;
+}
+
+.container-fluid.bottom-spacing
+{
+  margin-bottom:15px;
+}
+
+.row.misc
+{
+  padding-top:15px;
+}
+
+.hide-accessible
+{
+  display:none;
+}
+
+#mid-level.col-md-12
+{
+  background-color:#f8f8f7;
+  padding-top:15px;
+}
+
+#bottom-level.col-md-12
+{
+  background-color:#f0f0f0;
+  padding-top:15px;
+}
+
+/* Page Slogans */
+.col-md-12.intro h1
+{
+  font-size:24px;
+  line-height:36px;
+  margin:0;
+  padding:0;
+  text-transform:uppercase;
+  color:#fff;
+  font-weight:400;
+  margin-top:36px;
+}
+
+.col-md-12.blurb
+{
+  background-color:#f8f8f7;
+}
+
+.banner .sdg-logo
+{
+  width:130px;
+  display:block;
+  margin:0 auto;
+  cursor:pointer;
+}
+
+/*  1.3 : ------------- Navigation ---------------- */
+.navbar
+{
+  margin-bottom:0;
+  border-radius:0;
+}
+
+.navbar-brand
+{
+  background:url(../images/logo-home-resized.png) no-repeat 0 6px;
+  background-size:50px 57px;
+  width:50px;
+  height:63px;
+}
+
+.navbar-custom .center
+{
+/*position: absolute;
+  left:50%;*/
+}
+
+.navbar-custom
+{
+  background-color:#3672d2;
+  border-color:#2a63bd;
+  background-image:0 to(#3672d2));
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(tobottom,#608fdb0%,#3672d2100%);
+  background-repeat:repeat-x;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff608fdb',endColorstr='#ff3672d2',GradientType=0);
+  float:left;
+  width:100%;
+}
+
+.navbar-custom .navbar-brand
+{
+  color:#fff;
+}
+
+.navbar-custom .navbar-brand:hover,.navbar-custom .navbar-brand:focus
+{
+  color:#e6e6e6;
+  background-color:transparent;
+}
+
+.navbar-custom .navbar-text
+{
+  color:#fff;
+}
+
+.navbar-custom .navbar-nav > li:last-child > a
+{
+}
+
+.navbar-custom .navbar-nav > li > a
+{
+  color:#fff;
+  font-size:20px;
+  font-weight:700;
+  padding-top:25px;
+}
+
+.navbar-custom .navbar-nav > li
+{
+  margin-left:20px;
+}
+
+.navbar-custom .navbar-nav > li > a.active,.navbar-custom .navbar-nav > li > a:hover,.navbar-custom .navbar-nav > li > a:focus
+{
+  color:silver;
+  background-color:transparent;
+}
+
+.navbar-custom .navbar-nav > .active > a,.navbar-custom .navbar-nav > .active > a:hover,.navbar-custom .navbar-nav > .active > a:focus
+{
+  color:silver;
+  background-color:#2a63bd;
+  background-image:0 to(#457cd5));
+  background-image:0;
+  background-image:0;
+  background-image:linear-gradient(tobottom,#2a63bd0%,#457cd5100%);
+  background-repeat:repeat-x;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2a63bd',endColorstr='#ff457cd5',GradientType=0);
+}
+
+.navbar-custom .navbar-nav > .disabled > a,.navbar-custom .navbar-nav > .disabled > a:hover,.navbar-custom .navbar-nav > .disabled > a:focus
+{
+  color:#ccc;
+  background-color:transparent;
+}
+
+.navbar-custom .navbar-toggle
+{
+  border-color:#ddd;
+}
+
+.navbar-custom .navbar-toggle:hover,.navbar-custom .navbar-toggle:focus
+{
+  background-color:#ddd;
+}
+
+.navbar-custom .navbar-toggle .icon-bar
+{
+  background-color:#ccc;
+}
+
+.navbar-custom .navbar-collapse,.navbar-custom .navbar-form
+{
+  border-color:#2a61bb;
+}
+
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,.navbar-custom .navbar-nav > .dropdown > a:focus .caret
+{
+  border-top-color:silver;
+  border-bottom-color:silver;
+}
+
+.navbar-custom .navbar-nav > .open > a,.navbar-custom .navbar-nav > .open > a:hover,.navbar-custom .navbar-nav > .open > a:focus
+{
+  background-color:#2a63bd;
+  color:silver;
+}
+
+.navbar-custom .navbar-nav > .open > a .caret,.navbar-custom .navbar-nav > .open > a:hover .caret,.navbar-custom .navbar-nav > .open > a:focus .caret
+{
+  border-top-color:silver;
+  border-bottom-color:silver;
+}
+
+.navbar-custom .navbar-nav > .dropdown > a .caret
+{
+  border-top-color:#fff;
+  border-bottom-color:#fff;
+}
+
+@media max-width 767 {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a
+  {
+    color:#fff;
+  }
+  
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,.navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus
+  {
+    color:silver;
+    background-color:transparent;
+  }
+  
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,.navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,.navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus
+  {
+    color:silver;
+    background-color:#2a63bd;
+  }
+  
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,.navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,.navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus
+  {
+    color:#ccc;
+    background-color:transparent;
+  }
+}
+
+.navbar-custom .navbar-link
+{
+  color:#fff;
+}
+
+.navbar-custom .navbar-link:hover
+{
+  color:silver;
+}
+
+/*  1.4 : ------------- Page Banners ---------------- */
+.sdg-home .banner.col-md-12
+{
+  background:url(../images/sdg-skyline.png);
+  border:0;
+  border-radius:0;
+  margin-bottom:0;
+  padding-top:10px;
+  height:350px;
+}
+
+.sdg-blog .banner.col-md-12
+{
+  background:url(../images/sdg-blog.jpg) center;
+  border:0;
+  border-radius:0;
+  margin-bottom:0;
+  padding-top:10px;
+  height:350px;
+}
+
+.sdg-about .banner.col-md-12
+{
+  background:url(../images/sdg-about.png) center;
+  border:0;
+  border-radius:0;
+  margin-bottom:0;
+  padding-top:10px;
+  height:350px;
+}
+
+.sdg-people .banner.col-md-12
+{
+  background:url(../images/sdg-people.png) center;
+  border:0;
+  border-radius:0;
+  margin-bottom:0;
+  padding-top:10px;
+  height:350px;
+}
+
+.hero-unit img
+{
+  width:100%;
+}
+
+.sdg-solutions .banner.col-md-12
+{
+  background:url(../images/sdg-solutions.png);
+  background-size:stretch;
+  border:0;
+  border-radius:0;
+  margin-bottom:0;
+  padding-top:10px;
+  height:350px;
+}
+
+.sdg-solutions .partners
+{
+  text-align:center;
+}
+
+.sdg-solutions .partners img
+{
+  width:250px;
+}
+
+.sdg-solutions .partners img.padding
+{
+  padding-top:75px;
+}
+
+/*  1.5 : ------------- SDG Slideshow ---------------- */
+#sdg-slideshow
+{
+  background-color:#fff;
+  padding-top:15px;
+  padding-bottom:15px;
+  height:220px;
+  float:left;
+  width:100%;
+}
+
+/*  2 : ----------------------------- General Page Styling ------------------------------- */
+/*  2.1 : ------------- News/Block Items ---------------- */
+.sub-headings
+{
+  background-color:#3672d2;
+  color:#fff;
+  font-size:20px;
+  padding:5px 0;
+  text-align:center;
+}
+
+.case-studies.info-items.col-md-4 ul li.case1 img
+{
+  margin-bottom:36px;
+}
+
+.case-studies.info-items.col-md-4 ul li img
+{
+  margin-bottom:10px;
+}
+
+.case-studies a
+{
+  font-size:18px;
+}
+
+.info-items
+{
+  float:left;
+}
+
+.info-items ul
+{
+  padding:0;
+  margin:0;
+}
+
+.info-items ul li
+{
+  list-style:none;
+  padding:0;
+  margin:0;
+  background-color:#fff;
+  padding:15px;
+}
+
+.news.info-items ul li
+{
+  min-height:418px;
+}
+
+.info-items ul li a
+{
+  display:block;
+  font-weight:700;
+  font-size:18px;
+  margin-bottom:10px;
+}
+
+.info-items ul li span
+{
+  text-align:justify;
+  clear:both;
+}
+
+.news.info-items ul li
+{
+  text-align:center;
+}
+
+.news.info-items ul li span
+{
+  display:block;
+}
+
+.info-items .btn
+{
+  padding:12px;
+}
+
+.info-items .btn.btn-primary,#sdg-blog .btn.btn-primary,.btn.btn-primary
+{
+  display:block;
+  text-align:center;
+  transition:.5s ease;
+  border-radius:0;
+  background-color:#43c1e8;
+  border:0;
+  padding:12px;
+  font-size:18px;
+}
+
+.btn.btn-primary
+{
+  line-height:28px;
+}
+
+.info-items .btn.btn-primary:hover,#sdg-blog .btn.btn-primary:hover,.cta-actions.col-md-8 .btn.btn-primary:hover,.btn.btn-primary:hover
+{
+  background-color:#3672d2;
+}
+
+.info-items.col-md-4,.cta-actions.col-md-8
+{
+  padding:0 15px 0 0;
+}
+
+.info-items.col-md-4.last
+{
+  padding:0;
+}
+
+.blog.info-items ul li
+{
+  min-height:298px;
+}
+
+.sdg-summary
+{
+  background-color:rgba(54,114,210,0.5);
+  color:#fff;
+  font-size:32px;
+  padding:50px;
+  position:absolute;
+  top:-1500px;
+}
+
+.navbar-default .navbar-nav>li>a.lifeRay
+{
+  font-size:12px;
+}
+
+label.error
+{
+  color:red;
+  font-style:italic;
+  font-weight:700;
+  padding-top:10px;
+  margin-bottom:0;
+}
+
+/* Join SDG */
+.section-titles
+{
+  height:70px;
+  color:grey;
+  background-color:#F8F8F7;
+  border-bottom:1px solid #DCDCDC;
+}
+
+.section-titles.passion
+{
+  background-color:#f8f8f7;
+}
+
+.section-titles span
+{
+  padding:24px 0 0;
+  margin:0;
+  display:block;
+  vertical-align:middle;
+  font-size:28px;
+  color:#333;
+  font-family:inherit;
+  font-weight:500;
+  line-height:1.1;
+  text-align:center;
+}
+
+.section-titles.passion .col-md-12 span,.section-titles.studies .col-md-12 span,.section-titles.liveNews .col-md-12 span
+{
+  width:100%;
+  text-align:center;
+}
+
+.section-titles span.highlight
+{
+  text-shadow:4px 4px 2px rgba(150,150,150,1);
+}
+
+a#sign-in
+{
+  display:block;
+  clear:both;
+  margin-top:10px;
+}
+
+#twitter.col-md-4
+{
+  padding:0 15px 0 0;
+}
+
+#twitter .sub-headings
+{
+  float:left;
+  background:#00273d url(../images/social/twitter-heading.png) no-repeat 15px 7px;
+  background-size:24px 19px;
+  display:block;
+  text-align:left;
+  font-size:16px;
+  padding-left:50px;
+  width:100%;
+}
+
+#news.col-md-8,#blog.col-md-8
+{
+  padding:0;
+}
+
+/* LifeRay Portal Login */
+#lifeRay input,#lifeRay a
+{
+  margin:0 auto;
+  width:60%;
+  margin-bottom:5px;
+  border-radius:0;
+  border:0;
+  text-align:center;
+  display:block;
+  height:25px;
+}
+
+#lifeRay a
+{
+  margin-top:20px;
+  height:34px;
+}
+
+/* RSS Feed */
+#sdg-blog
+{
+  overflow:scroll;
+  overflow-y:scroll;
+}
+
+#sdg-blog #divRss
+{
+  background-color:#fff;
+  padding:15px;
+  height:387px;
+  overflow:scroll;
+  overflow-y:scroll;
+}
+
+#sdg-blog .sub-headings
+{
+  background:#00273d url(../images/social/rss_round.png) no-repeat 15px 7px;
+  background-size:24px 19px;
+  display:block;
+  text-align:left;
+  font-size:16px;
+  padding-left:50px;
+}
+
+#sdg-blog ul
+{
+  margin:0;
+  padding:0;
+}
+
+#sdg-blog ul li
+{
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+
+#sdg-blog ul li img
+{
+  display:none;
+}
+
+#sdg-blog ul li p
+{
+  text-align:justify;
+}
+
+/* PDF Modals */
+.modal h4.modal-title
+{
+  color:#428bca;
+  font-weight:700;
+  text-align:center;
+}
+
+.modal-body
+{
+  overflow:hidden;
+}
+
+.pdfModals
+{
+  width:100%;
+  height:700px;
+}
+
+/* Loader Spinner */
+.loading-spinner-page-overlay
+{
+  display:none;
+  position:fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.75);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000',endColorstr='#cc000000',GradientType=0);
+  -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cc000000',endColorstr='#cc000000',GradientType=0);
+  zoom:1;
+  z-index:9999;
+}
+
+.loading-spinner img
+{
+  position:absolute;
+  top:45%;
+  left:45%;
+}
+
+/* Google Map */
+.sdg-google-map
+{
+  cursor:pointer;
+}
+
+/* Contact / Join Forms */
+#contact-us-form .btn-default,#cntctfrm_contact_form .btn-default
+{
+  background-color:#43c1e8;
+  border:0;
+  color:#fff;
+  transition:.5s ease;
+  border-radius:0;
+}
+
+#contact-us-form .btn-default:hover,#cntctfrm_contact_form .btn-default:hover
+{
+  background-color:#3672d2;
+}
+
+/*  3 : ----------------------------- Page Specific Styling ------------------------------- */
+/*  3.1 : ------------- SDG - Home Page ---------------- */
+.sdg-home .journal-content-article
+{
+  min-height:150px;
+}
+
+.sdg-home .journal-content-article h3,.sdg-solutions .journal-content-article h1,.sdg-about .journal-content-article h2,.sdg-solutions .journal-content-article h3,.sdg-people .journal-content-article h4
+{
+  text-align:center;
+  color:#428bca;
+  font-weight:700;
+  font-size:20px;
+}
+
+.sdg-home .journal-content-article p,.sdg-solutions .journal-content-article p,.sdg-people .journal-content-article p
+{
+  text-align:justify;
+  padding-top:15px;
+  letter-spacing:.03em;
+}
+
+.sdg-home .journal-content-article h4 a,.sdg-solutions .journal-content-article h1,.sdg-solutions .journal-content-article h4 a,.sdg-people .journal-content-article h4
+{
+  display:block;
+  text-align:center;
+  font-weight:700;
+}
+
+.sdg-home .dark img
+{
+  border:1px solid #333;
+  width:100%;
+  margin:0 auto;
+  display:block;
+}
+
+.sdg-home .hero-unit
+{
+  background:url(../images/hero-bg.jpg) center center;
+  background-size:cover;
+  padding:25px;
+}
+
+.sdg-home .hero-unit .row
+{
+  padding:0 15px;
+}
+
+.sdg-home .hero-unit .container.in
+{
+  padding:0 20px;
+}
+
+.sdg-home .hero-unit p
+{
+  font-size:1.75em;
+  color:#333;
+  line-height:37px;
+}
+
+.sdg-home .hero-unit h3
+{
+  font-size:60px;
+  line-height:1;
+  color:inherit;
+  letter-spacing:-1px;
+  text-align:left;
+}
+
+.sdg-home .case-studies,.sdg-solutions .case-studies
+{
+  background-color:#e9e8e8;
+  padding:20px 0;
+}
+
+.sdg-home .dark
+{
+  background-color:#dbdbdb;
+  padding-bottom:20px;
+}
+
+/*  3.2 : ------------- SDG - Our Solutions ---------------- */
+.portlet-title
+{
+  display:none;
+}
+
+.sdg-solutions .journal-content-article.white
+{
+  background-color:#fff;
+  padding:15px;
+}
+
+.sdg-solutions .journal-content-article a.btn.btn-large.btn-primary,.sdg-solutions .journal-content-article a.btn.btn-primary,.sdg-solutions a.btn.btn-primary
+{
+  border-radius:0;
+}
+
+.sdg-home .journal-content-article p.study-content,.sdg-solutions .journal-content-article p.study-content
+{
+  min-height:165px;
+}
+
+.sdg-solutions .journal-content-article p.study-content.small
+{
+  min-height:125px;
+  font-size:100%;
+}
+
+/*  3.3 : ------------- SDG - Our Blog ---------------- */
+.inner-content.sdg-blog
+{
+  background-color:#e6e6e5;
+  padding-right:50px;
+}
+
+.sdg-blog-right-column
+{
+  background-color:#f8f8f7;
+}
+
+.sdg-blog .sdg-blog-right-column.col-md-4
+{
+  padding-left:0;
+  padding-right:0;
+}
+
+.sdg-blog .sdg-blog-right-column.col-md-4 span.title-text
+{
+  display:block;
+  background-color:#3672d2;
+  color:#fff;
+  font-size:18px;
+  padding:5px 0;
+  text-align:center;
+}
+
+.sdg-blog .taglib-flags
+{
+  display:none;
+}
+
+.sdg-blog .lfr-asset-category-list,.sdg-blog .tag-items.tag-list
+{
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+.sdg-blog #divRss .feedEkList li
+{
+  list-style:none;
+  border-bottom:1px solid #3672d2;
+  padding-bottom:15px;
+}
+
+.sdg-blog #divRss .feedEkList li img
+{
+  display:none;
+}
+
+.sdg-blog #divRss .feedEkList li .rss-titles
+{
+  color:#000;
+  font-style:italic;
+}
+
+.sdg-blog #divRss .feedEkList li a.title-link
+{
+  font-size:22px;
+  font-weight:700;
+  padding:15px 0;
+  display:block;
+}
+
+#divRss .feedEkList li a.title-link
+{
+  display:block;
+}
+
+.sdg-blog #divRss .feedEkList li .itemContent p
+{
+  text-align:justify;
+  margin-top:15px;
+}
+
+.sdg-blog #divRss .feedEkList li .itemContent p img
+{
+  display:none;
+}
+
+.sdg-blog .search-query.form-control
+{
+  width:65%;
+}
+
+.sdg-blog .subscribe
+{
+  float:right;
+}
+
+/*  3.4 : ------------- SDG - About Us ---------------- */
+.sdg-about .col-md-12.intro
+{
+  background:url(../images/sdg-about-banner.png) no-repeat top center;
+  height:350px;
+  opacity:.5;
+}
+
+.sdg-about .inner-content.col-md-12
+{
+  background-color:#e9e8e8;
+}
+
+.sdg-about .inner-content.col-md-12 .journal-content-article h2
+{
+  text-align:center;
+}
+
+.sdg-about .inner-content.col-md-12 .journal-content-article p
+{
+  text-align:justify;
+}
+
+.sdg-about .custom-pad
+{
+  padding-left:0;
+}
+
+.sdg-about .custom-pad-r
+{
+  padding-right:0;
+}
+
+.sdg-about .custom-pad p.first
+{
+  padding-top:40px;
+}
+
+.sdg-about .sdg-owners
+{
+  width:300px;
+  margin-bottom:15px;
+}
+
+/*  3.5 : ------------- SDG - Our People ---------------- */
+.sdg-people .block-content.col-md-12 p
+{
+  text-align:center;
+  line-height:34px;
+  font-size:23px;
+  color:#706e6e;
+  padding:15px 0 10px;
+}
+
+.sdg-people .job-offers .journal-content-article ul
+{
+  padding:0;
+  margin:0;
+}
+
+.sdg-people .job-offers .journal-content-article .tab-content h4
+{
+  margin-top:0;
+}
+
+.sdg-people .job-offers .journal-content-article ul.job-list
+{
+/*width:280px;*/
+}
+
+.sdg-people .job-offers .journal-content-article ul.job-list li
+{
+  list-style:none;
+  border-bottom:1px solid #DCDCDC;
+  margin-bottom:20px;
+/*width:230px;*/
+  padding-bottom:10px;
+}
+
+.sdg-people .job-offers .journal-content-article ul.job-list li.active a
+{
+  color:#000;
+}
+
+.sdg-people .job-offers .journal-content-article ul.job-desc
+{
+  padding-bottom:10px;
+  margin-top:10px;
+  display:inline-block;
+}
+
+.sdg-people .job-offers .journal-content-article ul.job-desc li
+{
+  margin:0 0 10px 30px;
+  padding-left:10px;
+}
+
+.sdg-people .job-offers .journal-content-article .job-desc-headings
+{
+  font-size:18px;
+  font-weight:700;
+  display:block;
+}
+
+.sdg-people .job-offers .glyphicon-chevron-right
+{
+  float:right;
+}
+
+/*  5 : ----------------------------- Social Icons ------------------------------- */
+
+.social-icons a:hover
+{
+  text-decoration:none;
+}
+
+.social-icons ul
+{
+  padding:0;
+  margin:0 auto;
+  width:180px;
+}
+
+.social-icons li
+{
+  float:left;
+  list-style:none;
+  margin-right:10px;
+}
+
+.social-icons li.social-facebook a
+{
+  background:url(../images/social/facebook-icon@2x.png);
+  background-size:37px 37px;
+  display:block;
+  width:37px;
+  height:37px;
+}
+
+.social-icons li.social-facebook a:hover
+{
+  background:url(../images/social/facebook-icon-hover@2x.png);
+  background-size:37px 37px;
+  display:block;
+  width:37px;
+  height:37px;
+}
+
+.social-icons li.social-twitter a
+{
+  background:url(../images/social/twitter-icon@2x.png);
+  background-size:37px 37px;
+  display:block;
+  width:37px;
+  height:37px;
+}
+
+.social-icons li.social-twitter a:hover
+{
+  background:url(../images/social/twitter-icon-hover@2x.png);
+  background-size:37px 37px;
+  display:block;
+  width:37px;
+  height:37px;
+}
+
+.social-icons li.social-blog a
+{
+  background:url(../images/social/rss-icon@2x.png);
+  background-size:37px 37px;
+  display:block;
+  width:37px;
+  height:37px;
+}
+
+.social-icons li.social-blog a:hover
+{
+  background:url(../images/social/rss-icon-hover@2x.png);
+  background-size:37px 37px;
+  display:block;
+  width:37px;
+  height:37px;
+}
+
+.social-icons li.social-linkedin a
+{
+  background:url(../images/social/linkedin-icon@2x.png);
+  background-size:37px 37px;
+  display:block;
+  width:37px;
+  height:37px;
+}
+
+.social-icons li.social-linkedin a:hover
+{
+  background:url(../images/social/linkedin-icon-hover@2x.png);
+  background-size:37px 37px;
+  display:block;
+  width:37px;
+  height:37px;
+}
+
+.social-icons li.last
+{
+  margin-right:0;
+}
+
+/* In Top Thin Bar */
+.thin-sdg-blue .social-icons ul
+{
+  margin:-4px 0 0;
+  width:auto;
+  padding-right:15px;
+}
+
+.thin-sdg-blue .social-icons li.social-facebook a
+{
+  background:url(../images/social/facebook-icon@2x.png);
+  background-size:26px 26px;
+  display:block;
+  width:26px;
+  height:26px;
+}
+
+.thin-sdg-blue .social-icons li.social-facebook a:hover
+{
+  background:url(../images/social/facebook-icon-hover@2x.png);
+  background-size:26px 26px;
+  display:block;
+  width:26px;
+  height:26px;
+}
+
+.thin-sdg-blue .social-icons li.social-twitter a
+{
+  background:url(../images/social/twitter-icon@2x.png);
+  background-size:26px 26px;
+  display:block;
+  width:26px;
+  height:26px;
+}
+
+.thin-sdg-blue .social-icons li.social-twitter a:hover
+{
+  background:url(../images/social/twitter-icon-hover@2x.png);
+  background-size:26px 26px;
+  display:block;
+  width:26px;
+  height:26px;
+}
+
+.thin-sdg-blue .social-icons li.social-blog a
+{
+  background:url(../images/social/rss-icon@2x.png);
+  background-size:26px 26px;
+  display:block;
+  width:26px;
+  height:26px;
+}
+
+.thin-sdg-blue .social-icons li.social-blog a:hover
+{
+  background:url(../images/social/rss-icon-hover@2x.png);
+  background-size:26px 26px;
+  display:block;
+  width:26px;
+  height:26px;
+}
+
+.thin-sdg-blue .social-icons li.social-linkedin a
+{
+  background:url(../images/social/linkedin-icon@2x.png);
+  background-size:26px 26px;
+  display:block;
+  width:26px;
+  height:26px;
+}
+
+.thin-sdg-blue .social-icons li.social-linkedin a:hover
+{
+  background:url(../images/social/linkedin-icon-hover@2x.png);
+  background-size:26px 26px;
+  display:block;
+  width:26px;
+  height:26px;
+}
+
+.social-icons li.last
+{
+  margin-right:0;
+}
+
+/*  6 : ----------------------------- SDG - Sticky Footer ------------------------------- */
+
+html
+{
+  position:relative;
+  min-height:100%;
+}
+
+/*#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}*/
+
+#footer
+{
+  background-color:#00273d;
+  padding-top:25px;
+  color:#fff;
+  margin-top:15px;
+  text-align:center;
+  clear:both;
+}
+
+#footer .footer
+{
+  padding-bottom:15px;
+}
+
+#footer ul
+{
+  clear:both;
+}
+
+#footer .legal
+{
+  background-color:#fff;
+}
+
+#footer p
+{
+  line-height:23px;
+}
+
+#footer .footer-heading
+{
+  color:#43c1e8;
+  font-size:20px;
+  text-align:center;
+  display:block;
+  margin-bottom:10px;
+}
+
+#footer address
+{
+  margin-bottom:0;
+}
+
+#footer .legal
+{
+  color:#000;
+  padding:10px 0;
+}
+
+#footer .legal ul li
+{
+  float:left;
+  list-style:none;
+}
+
+/*  4 : ----------------------------- SDG - Slide Show ------------------------------- */
+/* Browser Resets
+*********************************/
+.flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus
+{
+  outline:none;
+}
+
+.slides,.flex-control-nav,.flex-direction-nav
+{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+/* Icon Fonts
+*********************************/
+/* Font-face Icons */
+@font-face
+{
+  font-family:flexslider-icon;
+  src:url(fonts/flexslider-icon.eot);
+  src:url(fonts/flexslider-icon.eot?#iefix) format(embedded-opentype), url(fonts/flexslider-icon.woff) format(woff), url(fonts/flexslider-icon.ttf) format(truetype), url(fonts/flexslider-icon.svg#flexslider-icon) format(svg);
+  font-weight:400;
+  font-style:normal;
+}
+
+/* FlexSlider Necessary Styles
+*********************************/
+.flexslider
+{
+  margin:0;
+  padding:0;
+  height:150px!important;
+}
+
+.flexslider .slides > li
+{
+  display:none;
+  -webkit-backface-visibility:hidden;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img
+{
+  width:100%;
+  display:block;
+}
+
+.flex-pauseplay span
+{
+  text-transform:capitalize;
+}
+
+/* Clearfix for the .slides element */
+.slides:after
+{
+  content:".";
+  display:block;
+  clear:both;
+  visibility:hidden;
+  line-height:0;
+  height:0;
+}
+
+html[xmlns] .slides
+{
+  display:block;
+}
+
+* html .slides
+{
+  height:1%;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child
+{
+  display:block;
+}
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider
+{
+  margin:0;
+  background:#fff;
+  position:relative;
+  zoom:1;
+}
+
+.flex-viewport
+{
+  max-height:2000px;
+  -webkit-transition:all 1s ease;
+  -moz-transition:all 1s ease;
+  -o-transition:all 1s ease;
+  transition:all 1s ease;
+}
+
+.loading .flex-viewport
+{
+  max-height:300px;
+}
+
+.flexslider .slides
+{
+  zoom:1;
+}
+
+.carousel li
+{
+  margin-right:5px;
+}
+
+/* Direction Nav */
+.flex-direction-nav
+{
+  height:0;
+}
+
+.flex-direction-nav a
+{
+  text-decoration:none;
+  display:block;
+  width:65px;
+  height:75px;
+  margin:-20px 0 0;
+  position:absolute;
+  top:50%;
+  z-index:10;
+  overflow:hidden;
+  opacity:1;
+  cursor:pointer;
+  color:rgba(0,0,0,0.8);
+  text-shadow:1px 1px 0 rgba(255,255,255,0.3);
+  text-indent:-9999px;
+}
+
+.flex-direction-nav .flex-prev
+{
+  background:url(../images/slider-prev@2x.png) no-repeat;
+  background-size:125px 75px;
+  left:-80px;
+  display:block;
+}
+
+.flex-direction-nav .flex-next
+{
+  background:url(../images/slider-next@2x.png) no-repeat;
+  background-size:125px 75px;
+  display:block;
+  right:-90px;
+}
+
+/* Control Nav */
+.flex-control-nav
+{
+  width:100%;
+  position:absolute;
+  text-align:center;
+  margin-top:2px;
+  z-index:10;
+}
+
+.flex-control-nav li
+{
+  margin:0 6px;
+  display:inline-block;
+  zoom:1;
+}
+
+.flex-control-paging li a
+{
+  width:11px;
+  height:11px;
+  display:block;
+  background:#666;
+  background:rgba(0,39,61,1);
+  cursor:pointer;
+  text-indent:-9999px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  -o-border-radius:20px;
+  border-radius:20px;
+  -webkit-box-shadow:inset 0 0 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:inset 0 0 3px rgba(0,0,0,0.3);
+  -o-box-shadow:inset 0 0 3px rgba(0,0,0,0.3);
+  box-shadow:inset 0 0 3px rgba(0,0,0,0.3);
+}
+
+.flex-control-paging li a:hover
+{
+  background:#333;
+  background:rgba(0,0,0,0.7);
+}
+
+.flex-control-paging li a.flex-active
+{
+  background:#000;
+  background:rgba(67,193,232,1);
+  cursor:default;
+}
+
+.flex-control-thumbs
+{
+  margin:5px 0 0;
+  position:static;
+  overflow:hidden;
+}
+
+.flex-control-thumbs li
+{
+  width:25%;
+  float:left;
+  margin:0;
+}
+
+.flex-control-thumbs img
+{
+  width:100%;
+  display:block;
+  opacity:.7;
+  cursor:pointer;
+}
+
+.flex-control-thumbs img:hover
+{
+  opacity:1;
+}
+
+.flex-control-thumbs .flex-active
+{
+  opacity:1;
+  cursor:default;
+}
+
+@media screen and max-width 860px {
+  .flex-direction-nav .flex-prev
+  {
+    opacity:1;
+    left:10px;
+  }
+  
+  .flex-direction-nav .flex-next
+  {
+    opacity:1;
+    right:10px;
+  }
+}
+
+.slides li
+{
+  padding:15px;
+}
+
+.slides li p
+{
+  font-size:31.5px;
+  text-align:center;
+  color:#616161;
+  line-height:40px;
+  font-family:TradeGothicLTStd-Light, sans-serif;
+  padding-top:20px;
+}
+
+.slides li p a
+{
+  text-shadow:none;
+}
+
+/*  5 : ----------------------------- Media Queries ------------------------------- */
+/*  5.1 : ------------- iPhone (Landscape and Portrait) ---------------- */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+  body
+  {
+    font-size:12px;
+    -webkit-text-size-adjust:100%;
+    line-height:18px;
+  }
+  
+  .banner.col-md-12
+  {
+    display:none;
+  }
+  
+  .navbar-custom
+  {
+    float:none;
+  }
+  
+  .navbar-fixed-top
+  {
+    top:0;
+  }
+  
+  .navbar-nav
+  {
+    margin:0 -15px;
+  }
+  
+  .nav.navbar-nav
+  {
+    background-color:#f0f0f0;
+  }
+  
+  .navbar-custom .navbar-nav > li > a
+  {
+    padding-top:10px;
+    color:#428bca;
+  }
+  
+  .navbar-custom .navbar-nav > li
+  {
+    margin-left:0;
+  }
+  
+  .navbar-custom .navbar-nav > li
+  {
+    border-bottom:1px solid #DCDCDC;
+  }
+  
+  .navbar-nav>li>a
+  {
+    padding:10px;
+    font-size:16px!important;
+  }
+  
+  .glyphicon-chevron-right
+  {
+    float:right;
+  }
+  
+  .sdg-home .dark img
+  {
+    width:70%;
+  }
+  
+  .section-titles
+  {
+    height:70px;
+  }
+  
+  .section-titles span
+  {
+    font-size:18px;
+    padding:5px 0 0;
+  }
+  
+  .sdg-about .custom-pad p.first
+  {
+    padding-top:0;
+  }
+  
+  #sdg-slideshow
+  {
+    display:none;
+  }
+  
+  .sdg-people .block-content.col-md-12 p
+  {
+    font-size:18px;
+  }
+
+  #twitter.col-sm-6.col-md-3.last {
+    float:left;
+    width:100%;
+  }
+
+  .news.info-items {
+    margin-bottom:15px;
+  }
+
+  #footer .col-xs-12 {
+    margin-bottom:15px;
+  }
+
+  .sdg-home .journal-content-article p.study-content, .news.info-items ul li {
+    min-height:initial;
+  }
+
+}
+
+/*  5.2 : ------------- iPad (Landscape and Portrait) ---------------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .nav>li>a
+  {
+    padding:0 10px 0 0;
+  }
+  
+  .navbar-custom .center
+  {
+    margin-left:0!important;
+    left:0!important;
+  }
+  
+  .slides li p
+  {
+    font-size:23.5px;
+    line-height:35px;
+  }
+  
+  .sdg-home .case-studies .info-items .col-md-4
+  {
+    margin-bottom:15px;
+  }
+  
+  .sdg-home .info-items
+  {
+    margin-bottom:15px;
+  }
+  
+  .sdg-solutions .case-studies
+  {
+    padding:0;
+  }
+  
+  .sdg-solutions .journal-content-article.white
+  {
+    margin-top:15px;
+  }
+  
+  .sdg-about .sdg-owners
+  {
+    margin:0 auto;
+    display:block;
+    margin-bottom:15px;
+  }
+}
+
+@media only screen and (min-device-width : 768px)  {
+  .navbar-nav {
+    float:left;
+    margin:0;
+  }
+}
+
+@media (min-width: 768px){
+  
+}

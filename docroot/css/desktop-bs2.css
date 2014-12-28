@@ -1,0 +1,110 @@
+/* Desktop Sizes - 1024px+ */
+
+	@media only screen and (min-width : 1024px) {
+		/* Home Page */
+	.bs2-2 .banner {
+		float:left;
+		width:100%;
+	}
+	.bs-2 .navbar-brand {
+		float:left;
+	}
+	.bs-2 .mobileNavigation, .bs-2 .mobileNav {
+		display:none;
+	}
+	.bs-2 .navbar .nav>li>a {
+		text-shadow:0px 0px 0px;
+	}
+	.bs-2 .sdg-home .hero-unit {
+		margin-bottom:0px;
+	}
+	.bs-2 .info-items .btn.btn-primary, #sdg-blog .btn.btn-primary, .btn.btn-primary {
+		background-image:none;
+		text-shadow:0px 0px 0px;
+	}
+	.bs-2 .section-titles
+	{
+	  float:left;
+	  width:100%;
+	}
+
+	.bs-2 .our-passion.span4, .bs-2 .case-studies.span4 {
+		width:33.33333333%;
+		margin-left:0;
+		padding-left:15px;
+		padding-right:15px;
+	}
+
+	.bs-2 #sdg-blog.info-items.span3, .bs-2 .news.info-items.span3, .bs-2 #twitter.span3 {
+		width:25%;
+		margin-left:0;
+		padding-left:15px;
+		padding-right:15px;
+	}
+
+	.bs-2 #footer .span4 {
+		width:33.33333333%;
+		margin-left:0;
+		padding-left:15px;
+		padding-right:15px;
+	}
+	/* Our Solutions */
+	.sdg-solutions.bs-2 .case-studies .span4 {
+		width:33.33333333%;
+		margin-left:0;
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.sdg-solutions.bs-2 .partners .span4 {
+		width:33.33333333%;
+		margin-left:0;
+		padding-left:15px;
+		padding-right:15px;	
+	}
+	.sdg-solutions.bs-2 .case-studies .span4 {
+		width:33.33333333%;
+		margin-left:0;
+		padding-left:15px;
+		padding-right:15px;	
+	}
+	/* Our People */
+	.sdg-people.bs-2 .job-menu .span3 {
+		width:25%;
+		margin-left:0;
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.sdg-people.bs-2 .commitment-blocks .span4 {
+		width:33.33333333%;
+		margin-left:0;
+		padding-left:15px;
+		padding-right:15px;	
+	}
+	/* Our Blog */
+	.sdg-blog.bs-2 .sdg-blog-left-column.span8 {
+		width:66.66666666%;
+		margin-left:0;
+		padding-left:15px;
+		padding-right:15px;		
+	}
+	.sdg-blog.bs-2 .sdg-blog-right-column.span4 {
+		width:33.33333333%;
+		margin-left:0;
+		padding-left:15px;
+		padding-right:15px;		
+	}
+	/* About */
+	.sdg-about.bs-2 .inner-content.sdg-about {
+		float:left;
+		width:100%;
+	}
+	.sdg-about.bs-2 .inner-content.sdg-about .span9 {
+		float:left;
+		width:75%;
+		margin-left:0;
+		padding-right:15px;
+	}
+	.sdg-about.bs-2 .inner-content.sdg-about.sdg-about .sdg-owners {
+		margin-left:15px;
+	}
+}

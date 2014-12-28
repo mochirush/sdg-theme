@@ -1,0 +1,23 @@
+a, button, .btn, .btn.btn-primary, button.btn.btn-large, input[type="submit"].btn.btn-large {
+	text-shadow:none !important;
+	box-shadow:none !important;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+	margin-left:0px;
+	margin-top:3px;
+}
+.navbar-right {
+	float:right !important;
+}
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	display: none;
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+}

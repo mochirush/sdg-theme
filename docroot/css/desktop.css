@@ -1,0 +1,38 @@
+/* Desktop Sizes - 1024px+ */
+
+	@media only screen and (min-width : 1024px) {
+	.sdg-home .hero-unit {
+		margin-bottom:0px;
+	}
+	.info-items .btn.btn-primary, #sdg-blog .btn.btn-primary, .btn.btn-primary {
+		background-image:none;
+		text-shadow:0px 0px 0px 0px;
+	}
+	.section-titles.passion
+	{
+	  float:left;
+	  width:100%;
+	}
+
+	.our-passion.span4, .case-studies.span4 {
+		width:33.33333333%;
+		margin-left:0;
+		padding-left:15px;
+		padding-right:15px;
+	}
+
+	#sdg-blog.info-items.span3, .news.info-items.span3, #twitter.span3 {
+		width:25%;
+		margin-left:0;
+		padding-left:15px;
+		padding-right:15px;
+	}
+
+	#footer .span4 {
+		width:33.33333333%;
+		margin-left:0;
+		padding-left:15px;
+		padding-right:15px;
+	}
+
+}

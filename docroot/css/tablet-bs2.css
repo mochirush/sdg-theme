@@ -1,0 +1,31 @@
+/* Tablet Sizes - 768px < x < 1024px */
+
+	@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.navbar-custom {
+		padding:0px 15px;
+	}
+	.sdg-home.bs-2 #sdg-blog.info-items.span3, .sdg-home.bs-2 .news.info-items.span3, .bs-2 #twitter.span3 {
+		width:50%;
+		margin-left:0;
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.sdg-home.bs-2 .case-studies .journal-content-article h4 a {
+		min-height:40px;
+	}
+	/* Our Solutions */
+	.sdg-solutions.bs-2 .journal-content-article p.study-content {
+		min-height:185px;
+	}
+	.sdg-solutions.bs-2 .journal-content-article h4 a {
+		min-height:40px;
+	}
+	/* About */
+	.sdg-about.bs-2 .sdg-about .journal-content-article p {
+		padding:0px 15px;
+	}
+	.sdg-about.bs-2 .inner-content.sdg-about .span9 {
+		width:68%;
+		padding-right:15px;
+	}
+}

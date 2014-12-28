@@ -1,0 +1,74 @@
+/* Phone Sizes - up to 768px */
+
+	@media (max-width:768px) {
+	body {
+			padding:0px;
+			overflow:hidden;
+			overflow-y:auto;
+		}
+	[class*="span"] {
+		padding-right:20px;
+	}
+	.sdg-home .banner, .sdg-home.bs-2 #sdg-slideshow {
+		display:none;
+	}
+	.sdg-home.bs-2 .hero-unit {
+		display:none;
+	}
+	.sdg-home.bs-2 .span4 {
+		width:auto;
+	}
+	.sdg-home.bs-2 .learn-more {
+		margin: 0 auto;
+	}
+	/* Menu System */
+	.navbar.navbar-default .navbar-brand {
+		float:left;
+	}
+	.navbar.navbar-default .navbar-collapse, .mobileNavigation {
+		display:none;
+	}
+	.mobileNav {
+		float:right;
+		background:none;
+		border:0;
+		border-color:#ddd;
+		border-radius:1px;
+		margin-top:18px;
+	}
+	.mobileNav .icon-bar {
+		display:block; 
+		background-color:#ccc;
+		width: 22px;
+		height: 2px;
+		border-radius: 1px;
+		margin-top:4px;
+	}
+	.nav.navbar-nav li {
+		float:none;
+		display:block;
+	}
+	.mobileNavigation ul li {
+		border-bottom: 1px solid #DCDCDC;
+		padding-left:20px;
+	}
+	.section-titles {
+		height:initial;
+		padding:10px 0px;
+	}
+	.btn-primary {
+		background-image:none;
+		text-shadow:0px 0px 0px;
+	}	
+	.sdg-home.bs-2 #sdg-blog.info-items.span3, .sdg-home.bs-2 .news.info-items.span3, .bs-2 #twitter.span3 {
+		width:100%;
+	}
+	#footer .span4 {
+		float:none;
+		margin:0 auto;
+		clear:both;
+	}
+	#footer .find-us.span4 {
+		padding-top:15px;
+	}
+}
